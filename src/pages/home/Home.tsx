@@ -1,8 +1,9 @@
 ﻿import { useState } from "react";
 
-interface homeProps{
-    titulo: string;
-    texto: string;
+
+interface homeProps {
+  titulo: string;
+  texto: string;
 }
 
 function Home(props: homeProps) {
@@ -12,20 +13,19 @@ function Home(props: homeProps) {
   return (
     <>
 
-    {
-      isLogged ? (
-      <div>
-        <h2>{props.titulo}</h2>
-        <p>{props.texto}</p>
-    </div>
-      ) : (
-        <div>
-          <h2>Login</h2>
-          <button onClick={() => setIsLogged(true)}>Entrar</button>
-        </div>
-      )
-    }
-    
+      {
+        isLogged ? (
+          <div>
+            <h2>{props.titulo}</h2>
+            <p>{props.texto}</p>
+          </div>
+        ) : (
+          <div>
+            <h2>Login</h2>
+            <button onClick={() => setIsLogged(true)}>Entrar</button>
+          </div>
+        )
+      }
 
     </>
   )
