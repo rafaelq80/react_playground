@@ -1,18 +1,19 @@
 import './App.css'
-import Contador from './pages/contador/Contador'
-import Home from './pages/home/Home'
-import Tarefa from './pages/tarefa/Tarefa'
+import ListarUsuarios from './components/listarusuarios/ListarUsuarios'
+import ListarUsuariosAW from './components/listarusuarios/ListarUsuariosAW'
 
 function App() {
 
   return (
     <>
-     <Home 
+     {/* <Home 
         titulo = "Componente Home"
         texto = "Este texto foi enviado pelo Componente App."
      />
     <Contador />
-    <Tarefa />
+    <Tarefa /> */}
+    <ListarUsuarios />
+    <ListarUsuariosAW />
     </>
   )
 }
